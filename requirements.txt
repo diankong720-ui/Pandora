@@ -1,0 +1,16 @@
+# Deep Research Skill — Runtime Dependencies
+#
+# The core runtime (runtime/*.py) has NO mandatory external dependencies.
+# All stdlib. Install extras only for the example warehouse clients you choose to use.
+
+# --- HttpSqlClient (runtime/example_clients/http_sql_client.py) ---
+# requests>=2.28.0
+# python-dotenv>=1.0.0
+
+# --- SqlAlchemyClient (runtime/example_clients/http_sql_client.py) ---
+# sqlalchemy>=2.0.0
+#
+# Plus one driver for your database:
+#   psycopg2-binary>=2.9     # PostgreSQL
+#   pymysql>=1.1             # MySQL / MariaDB
+#   sqlalchemy-bigquery>=1.9 # BigQuery
